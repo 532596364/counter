@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>counter</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<div class="container">
+        <!-- 计算器 -->
+        <div id="counter">
+            <!-- 显示器 -->
+            <input type="text" id="numScreen" name="numScreen" class="screen" value="0"  readonly="readonly"  disabled="disabled" maxlength="8"/>
+            <!-- 输入键盘 -->
+            <ul id="btnGrpup">
+                <li onclick="clean()">c</li>
+                <li onclick="commond('reverse')">+/-</li>
+                <li onclick="commond('percent')" >%</li>
+                <li onclick="commond('divide')" class="iconfont" >&#xe618;</li>
+                <li onclick="commond(7)" >7</li>
+                <li onclick="commond(8)" >8</li>
+                <li onclick="commond(9)" >9</li>
+                <li onclick="commond('mul')" class="iconfont"  >&#xe9c8;</li>
+                <li onclick="commond(4)" >4</li>
+                <li onclick="commond(5)" >5</li>
+                <li onclick="commond(6)" >6</li>
+                <li onclick="commond('minus')" class="iconfont"  >&#xe6cc;</li>
+                <li onclick="commond(1)">1</li>
+                <li onclick="commond(2)">2</li>
+                <li onclick="commond(3)">3</li>
+                <li onclick="commond('add')" class="iconfont" >&#xe635;</li>
+                <li onclick="commond(0)" class="zero">0</li>
+                <li onclick="commond('dot')">.</li>
+                <li onclick="equal()" class="iconfont" >&#xe75c;</li>
+            </ul>
+        </div>
+	</div>
+    <script src="js/index.js"></script>
+</body>
+</html>
